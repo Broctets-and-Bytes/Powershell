@@ -1,0 +1,6 @@
+# Simple Timeline in UTC (as nature intended) of the entire primary OS drive. Switch the '\' for a system volume such as 'D:' for alternate partitions. 
+Get-ChildItem \ -Recurse | select Name,Directory,Extension,CreationTimeUtc,LastWriteTimeUtc,LastAccessTimeUtc | Export-Csv FileSystemTimeline.csv
+# Using the same process, but applying a date filter. Date format is: '11/7/2017 10:19:05 PM'
+Get-ChildItem D: -Recurse | select Name,Directory,Extension,CreationTimeUtc,LastWriteTimeUtc,LastAccessTimeUtc | Where {$_.CreationTimeUtc -gt '11/16/2017 4:51 PM'} | Format-Table
+# Using the same process with a date range. Note '-gt' is greater than 'lt' is less than.
+Get-ChildItem D: -Recurse | select Name,Extension,CreationTimeUtc,LastWriteTimeUtc,LastAccessTimeUtc | Where {$_.CreationTimeUtc -gt '11/13/2017 4:51 PM' -AND $_.CreationTimeUtc -lt '11/16/2017'} | Format-Table
