@@ -30,3 +30,5 @@ Get-Content .\IPsTmp2.txt | Sort | Get-Unique >IPs.txt
 rm IPsTmp.txt
 rm IPsTmp2.txt
 rm Resolved.txt
+
+Read-Host -Prompt "Process completed. Check Script Directory for results."

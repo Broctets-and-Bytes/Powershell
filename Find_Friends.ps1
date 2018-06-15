@@ -9,3 +9,5 @@ gwmi win32_LoggedOnUser -ComputerName $Targets | Select Antecedent,__SERVER | Ex
 }
 Get-Content .\Friends.txt
 rm .\Friends.txt
+
+Read-Host -Prompt "Process Complete. Check script directory for results."
