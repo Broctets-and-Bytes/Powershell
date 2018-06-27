@@ -5,6 +5,7 @@ $OriginFiles = Read-Host 'What is the root directory of the files that were copi
 #Ask user for the location where the files were copied to. Store that as $CopiedFiles.
 $CopiedFiles = Read-Host 'What is the root directory of the copied version of the files?'
 #Usr input switch for deciding if the files should be hashed recursively or not.
+Write-Host 'Should file hashes be collected for files recursively or not.'
 $Recurse = Read-Host " ( y / n ) " 
     Switch ($Recurse) 
         { 
