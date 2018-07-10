@@ -5,12 +5,34 @@ $NowYouHaveAnts = (Get-ChildItem $AntHouse)
 
  Rename-Item -Path $A.PSPath -NewName ("Ant{0}" -f $nr++)
  }
-Read-Host -Prompt "Congratulations, now you have ants! Press any key to exit."
 
+Read-Host -Prompt '
+Congratulations, now you have ants! Press any key to exit.
 
-
-
-
-
-
-
+               "=.
+             "=. \
+                \ \
+             _,-=\/=._        _.-,_
+            /         \      /=-._ "-.
+           |=-./~\___/~\    /     `-._\
+           |   \o/   \o/   /         /
+            \_   `~~~;/    |         |
+              `~,._,-''    /          /
+                 | |      =-._      /
+             _,-=/ \=-._     /|`-._/
+           //           \\   )\
+          /|             |)_.''/
+         //|             |\_."   _.-\
+        (|  \           /    _.`=    \
+        ||   ":_    _.;"_.-;"   _.-=.:
+     _-."/    / `-."\_."        =-_.;\
+    `-_./   /             _.-=.    / \\
+           |              =-_.;\ ."   \\
+           \                   \\/     \\
+           /\_                ''\\       \\
+          //  `=_         _.-"  \\       \\
+         //      `~-.=`"`''       ||      ||
+   LGB   ||    _.-_/|            ||      |\_.-_
+     _.-_/|   /_.-._/            |\_.-_  \_.-._\
+    /_.-._/                      \_.-._\
+'
