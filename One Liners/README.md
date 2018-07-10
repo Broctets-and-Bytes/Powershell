@@ -1,0 +1,1 @@
+Repo of files mostly designed as one line commands to be executed in powershell to acomplish a specific goal. If they are here, it's because I found them useful at some point. 
